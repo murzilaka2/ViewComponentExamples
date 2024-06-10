@@ -1,0 +1,12 @@
+﻿@model IEnumerable<string>
+
+<h4>User list</h4>
+
+@ViewData["Header"]
+
+<ul>
+    @foreach (var user in Model)
+    {
+        <li>@user</li>
+    }
+</ul>
